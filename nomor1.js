@@ -13,10 +13,11 @@ let angka = parseInt('42');
 let desimal = parseFloat('3.14')
 
 
-// 4. length. Properti ini digunakan untuk mengukut panjang dari String, Array atau objek lainnya yang ingin dihitung.
+// 4. length. This property is used to measure the length of a String, Array or other object that you want to calculate.
 
 const kata = "Nama saya Rama";
 const panjangKata = kata.length;
+console.log(panjangKata)
 
 // 5. pop(). This method is used to delete the last element from an Array also can return that element.
 

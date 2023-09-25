@@ -12,14 +12,14 @@ function searchName(word, limit, callback) {
         return;
     }
 
-    const results = names.filter(name => name.toLowerCase().includes(word.toLowerCase())).slice(0, 3);
+    const results = names.filter(name => name.toLowerCase().includes(word.toLowerCase()));
 
     if (results.length === 0) {
         console.log("Name not found.");
         return;
     }
 
-    callback(results);
+    callback(results.slice(0, limit));
 }
 
 function displayResults(results) {
